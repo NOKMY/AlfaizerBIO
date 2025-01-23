@@ -27,7 +27,7 @@ function Hero() {
         <div className="hero-illustration">
           <img
             src={profileImage}
-            alt="Your Profile"
+            alt="Alfaizer kyutie"
             className="illustration-image"
           />
         </div>
