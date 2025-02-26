@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/AboutMe.css";
 
 function AboutMe() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
       <header className="header">
         <nav className="navbar">
-          <ul className="navbar-list">
+          <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+            ☰
+          </div>
+          <ul className={`navbar-list ${menuOpen ? "active" : ""}`}>
             <li className="navbar-item">
               <Link to="/" className="navbar-link">Home</Link>
             </li>
