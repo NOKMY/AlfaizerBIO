@@ -8,7 +8,6 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-/* Navbar */
 .header {
   display: flex;
   justify-content: center;
@@ -55,7 +54,6 @@ body {
   color: #40E0D0;
 }
 
-/* Mobile Menu */
 .menu-toggle {
   display: none;
   font-size: 24px;
@@ -92,7 +90,6 @@ body {
   }
 }
 
-/* Hero Section */
 .hero-section {
   display: flex;
   justify-content: center;
@@ -151,7 +148,6 @@ body {
   background: rgba(255, 255, 255, 1);
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2rem;
