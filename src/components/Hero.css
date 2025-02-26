@@ -9,7 +9,6 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -53,7 +52,6 @@ body {
 .navbar-link:hover {
   color: #40E0D0; 
 }
-
 
 .hero-section {
   display: flex;
