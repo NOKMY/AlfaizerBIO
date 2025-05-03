@@ -1,0 +1,20 @@
+.blog-header-container {
+  background-color: rgba(1, 96, 82, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 25px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.blog-header-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.blog-header-container p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #e0f7f5;
+}

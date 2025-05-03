@@ -1,0 +1,34 @@
+.tour-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .blog-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00baa7;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

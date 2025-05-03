@@ -93,12 +93,9 @@ body {
 .hero-section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 50px 20px;
-  background-color: #a3e7d8;
-  text-align: center;
-  box-sizing: border-box;
+  align-items: flex-start;
+  min-height: 90vh; 
+  padding: 30px 20px; 
 }
 
 .hero-container {
@@ -117,6 +114,7 @@ body {
 
 .hero-text {
   max-width: 1000px;
+  margin-top: -150px; 
   font-family: 'Arial', sans-serif;
   text-align: center;
   width: 100%;
@@ -130,6 +128,8 @@ body {
 
 .description {
   font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 15px;
   line-height: 1.6;
   color: #40E0D0;
   text-align: justify;
@@ -151,12 +151,19 @@ body {
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2rem;
+    margin-bottom: 5px;
   }
 
   .description {
     font-size: 1rem;
     padding: 15px;
     max-width: 100%;
+    margin: 15px 0;
+  }
+
+  .hero-container {
+    max-width: 100%;
+    padding: 15px;
   }
 }
 
@@ -174,5 +181,36 @@ body {
     font-size: 0.9rem;
     padding: 10px;
     max-width: 100%;
+    margin: 10px 0;
   }
+
+  .hero-container {
+    padding: 10px;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+.resume-button-container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.print-btn {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.6rem 1.25rem;
+  background-color: #00baa7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.print-btn:hover {
+  background-color: #00897b;
 }
