@@ -1,0 +1,179 @@
+body {
+    background-image: url("../assets/turq.jpeg"); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .resume-page {
+    padding: 2rem 1.5rem;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 2rem auto;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .resume-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #00baa7;
+    border-bottom: 3px solid #00baa7;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+  
+  .resume-section {
+    margin-bottom: 2rem;
+  }
+  
+  .resume-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #00897b;
+    border-left: 5px solid #00baa7;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.5rem 1.5rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-list li::before {
+    content: "•";
+    color: #00baa7;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    background: white;
+    border-left: 6px solid #00baa7;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #00baa7;
+    margin-bottom: 0.4rem;
+  }
+  
+  .project-card p {
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  .resume-button-container {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .print-btn {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 0.6rem 1.25rem;
+    background-color: #00baa7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .print-btn:hover {
+    background-color: #00897b;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .resume-title {
+      font-size: 1.8rem;
+    }
+  
+    .resume-section h2 {
+      font-size: 1.3rem;
+    }
+  
+    .skills-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .project-card h3 {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .resume-page {
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+  
+    .skills-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .resume-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+  
+    .resume-page, .resume-page * {
+      visibility: visible;
+    }
+  
+    .resume-page {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 1in;
+      width: 100%;
+      background: white;
+      font-size: 12pt;
+    }
+  
+    .print-btn {
+      display: none;
+    }
+  
+    .project-card {
+      box-shadow: none;
+      border-left: 4px solid #000;
+      page-break-inside: avoid;
+    }
+  }
+  
