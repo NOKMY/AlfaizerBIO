@@ -18,7 +18,7 @@ function BlogPost() {
   return (
     <div className="blog-content">
       <h1>{post.title}</h1>
-      <p>{post.date}</p>
+      <h2>{post.date}</h2>
       <div
         className="blog-content"
         dangerouslySetInnerHTML={{ __html: post.content }}
