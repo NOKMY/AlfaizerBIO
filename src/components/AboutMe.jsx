@@ -8,9 +8,9 @@ function AboutMe() {
   return (
     <>
       <section id="introduction" className="hero-section">
-        <div className="hero-container">
-          <div className="hero-text text-center">
-            <h1 className="highlighted-name">About Me</h1>
+        <div className="hero-container"><br></br>
+          <br></br><div className="hero-text text-center"><br></br>
+            <br></br><h1 className="highlighted-name">About Me</h1>
             <p className="description">
               I'm Al-faizer Cruza, a full-stack developer with a deep love for solving complex problems and turning ideas into functioning systems. My strongest areas lie in backend programming, with proficiency in Python, JavaScript, Node.js, and SQL. However, I never shy away from front-end challenges — constantly improving my skills in React, HTML/CSS, and UI/UX tools like Figma and Adobe XD.
 
@@ -24,11 +24,19 @@ function AboutMe() {
               To put it simply: I don’t chase greatness; greatness follows me.
             </p>
 
-            <div className="resume-button-container">
-  <Link to="/resume" className="print-btn">
-    My Resume
-  </Link>
-</div>
+            <div>
+            <Link to="/resume" className="print-btn" style={{ marginRight: '10px' }}>
+              Project and Experience
+            </Link>
+            <a
+              href="/certificates/cv/cv_alfaizer.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="print-btn"
+            >
+              View Resume
+            </a>
+          </div>
           </div>
         </div>
       </section>
