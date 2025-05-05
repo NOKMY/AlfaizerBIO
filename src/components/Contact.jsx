@@ -30,17 +30,17 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      <h1 className="contact-title">Contact Me</h1>
+      <h1 className="contact-title">Get in Touch</h1>
 
       <div className="contact-info">
-        <h2>Get in Touch</h2>
+        
         <p>
-          Feel free to reach out to me via social media, email or phone. <br></br>Send message now. I'm git initopen to new opportunities and connections!
+          Feel free to reach out to me via social media, email or phone. <br></br>Send message now. I'm open to new opportunities and connections!<br></br>(Send a Message is working)
         </p>
 
         <div className="contact-details">
           <div className="phone">
-            <strong>Phone:</strong> (+63) 966 3257 423
+            <strong>Phone:</strong> (+63)966 3257 423
           </div>
           <div className="email">
             <strong>Email:</strong> <a href="mailto:alfaizerc@email.com">alfaizerc@email.com</a>
