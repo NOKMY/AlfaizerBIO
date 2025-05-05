@@ -42,11 +42,20 @@ const Resume = () => {
     </div>
     
     <div className="project-card">
+      <a href="https://safenest.free.nf/" target="_blank" rel="noopener noreferrer">
+        <h3>Capstone Project: SafeNest Flood Monitoring System</h3>
+      </a>
+      <p>SafeNest is a capstone project that combines IoT sensors and a web application to monitor flood levels in real time. It uses ultrasonic sensors and a NodeMCU to detect water levels, which are sent to the cloud and displayed on a user-friendly dashboard. Designed for LGUs and communities, the system helps improve early warning and disaster response through live updates, historical data, and alert features. </p>
+    </div>
+    
+    <div className="project-card">
       <a href="https://drive.google.com/drive/folders/1Q5RSJULXCC6VGFW-ojEjcF5uHuYFp2xV?usp=sharing" target="_blank" rel="noopener noreferrer">
         <h3>Multimedia Project: Crimson Cypher</h3>
       </a>
       <p>This conceptual esports organization is centered on enhancing its operational and visual identity. Efforts include the redesign of office environments, strategic branding development, merchandise creation, logo refinement, and facility improvement—all showcased through professional mockups. </p>
     </div>
+
+    
    
     <div className="project-card">
       <a href="https://drive.google.com/drive/folders/1pMt_0VTsqadK4GIcYLp2Ops0w-GpoH1o?usp=sharing" target="_blank" rel="noopener noreferrer">
